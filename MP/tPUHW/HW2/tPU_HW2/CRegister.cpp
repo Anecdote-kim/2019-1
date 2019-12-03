@@ -1,0 +1,16 @@
+#include "CRegister.h"
+
+void C16RegisterFile::show_regs()
+{
+  cout << "... register file ....." << endl;
+  for (int i = 0; i < 10; i++)
+    cout << " R" << i << ": " << m_regs[i] << endl;
+
+  for (int i = 10; i < 16; i++)
+    cout << " R" << i << ": " << m_regs[i] << endl;
+}
+
+void C16RegisterFile::show_reg0()
+{
+  cout << "Result :" << m_regs[0] << endl;
+}
